@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  resources :posts
+  resources :posts do
+    resources :comments
+  end
+
   resources :pages
 
   # Above is the shortcut for seven conventional routes below:
